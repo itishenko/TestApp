@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  TestApp
+
+  Created by Ivan Tishchenko on 16.05.2020.
+  Copyright © 2020 itishenko. All rights reserved.
+*/
+
+"List.Navigation.Title" = "Список";
+"List.Tab.Title" = "Список";
+
+"Service.Navigation.Title" = "Сервис";
+"Service.Tab.Title" = "Сервис";
+
+"Item.Add.Title" = "Добавить";
+"Item.Edit.Title" = "Изменить";
+
+"Item.Alert.Save" = "Хотите сохранить?";
+
+"Action.Edit" = "Изменить";
+"Action.Delete" = "Удалить";
+"Action.Yes" = "Да";
+"Action.No" = "Нет";
+"Action.Revert" = "Отмена";
+"Action.Done" = "Сохранить";
+"Action.Ok" = "Хорошо";

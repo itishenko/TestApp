@@ -1,0 +1,20 @@
+### Headers settings
+company: itishenko
+
+### Xcode project settings
+project_name: TestApp
+xcodeproj_path: TestApp.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: TestApp
+
+# The file path for new modules
+project_file_path: TestApp/Modules
+
+# The Xcode group path to new modules
+project_group_path: TestApp/Modules
+
+### Templates
+templates:
+- {name: swifty_viper}

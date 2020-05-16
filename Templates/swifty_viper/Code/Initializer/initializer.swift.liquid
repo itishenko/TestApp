@@ -1,0 +1,38 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+enum {{ module_info.name }}Module {
+
+    typealias View = {{ module_info.name }}ViewController
+    typealias Presenter = {{ module_info.name }}Presenter
+    typealias Router = {{ module_info.name }}Router
+    typealias Interactor = {{ module_info.name }}Interactor
+
+    static func build() -> UIViewController {
+
+        let view = View()
+        let interactor = Interactor()
+        let presenter = Presenter()
+        let router = Router()
+
+        view.output = presenter
+
+        interactor.output = presenter
+        presenter.interactor = interactor
+
+        presenter.view = view
+        presenter.router = router
+
+        router.viewController = view
+        router.presenter = presenter
+
+        return view
+    }
+}
