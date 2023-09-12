@@ -1,15 +1,15 @@
 # Test App
-Простое iOS приложение с TabBar контроллером, где на первой вкладке находится локальная таблица редактируемых пунктов, а на второй - список данных полученных из сетевого запроса в XML формате.
+A simple iOS application with a TabBar controller, where the first tab contains a local table of editable items, and the second tab displays a list of data fetched from a network request in XML format.
 
-Реализовано полностью без использования сторонних библиотек. Для хранения используется Core Data, для сетевых запросов URLSession и XMLParser для разбора ответа.
+Implemented entirely without the use of third-party libraries. Core Data is used for storage, URLSession for network requests, and XMLParser for parsing the response.
 
-# Архитектура
-Архитектура VIPER/Clean Swift с отдельно выделенными слоями приложения:
+# Architecture
+VIPER/Clean Swift architecture with distinct layers of the application:
 
 * App
 * VIPER Modules: Main, List, Item, Service
 * Common, Persistence, Networking
 * Core (Models)
 
-# Кодогенерация
-Для кодогенерации базовой структуры VIPER модулей используется [Generamba](https://github.com/strongself/Generamba) и модифицированный шаблон [swifty_viper](https://github.com/strongself/generamba-catalog)
+# Code Generation
+[Generamba](https://github.com/strongself/Generamba) and a modified [swifty_viper](https://github.com/strongself/generamba-catalog) template are used for code generation of the basic structure of VIPER modules.
